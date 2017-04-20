@@ -13,9 +13,9 @@ public abstract class BaseDao {
 
     protected Connection getConnection() {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("org.h2.Driver");
 
-            return DriverManager.getConnection("", "", "");
+            return DriverManager.getConnection("jdbc:h2:~/apps/h2db/article;DATABASE_TO_UPPER=false", "sa", "");
         }
         catch (Exception e) {
             throw new RuntimeException(e);

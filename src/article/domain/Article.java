@@ -7,8 +7,9 @@ import java.util.Date;
 public class Article {
 
     private Long id;
-    private String title;
+    private String subject;
     private String content;
+    private Integer visitCount;
     private Date createDate;
 
 
@@ -22,13 +23,13 @@ public class Article {
     }
 
 
-    public String getTitle() {
-        return title;
+    public String getSubject() {
+        return subject;
     }
 
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
 
@@ -39,6 +40,16 @@ public class Article {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+
+    public Integer getVisitCount() {
+        return visitCount;
+    }
+
+
+    public void setVisitCount(Integer visitCount) {
+        this.visitCount = visitCount;
     }
 
 
