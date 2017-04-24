@@ -27,8 +27,8 @@ public class ArticleService {
     }
 
 
-    public int save(Article article) {
-        return 0;
+    public void save(Article article) {
+        articleDao.save(article);;
     }
 
 }

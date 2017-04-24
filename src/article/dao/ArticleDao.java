@@ -53,7 +53,7 @@ public class ArticleDao extends BaseDao {
 
     // @formatter:off
     private static String saveQuery = new StringBuilder()
-            .append("CREATE Article ( \n")
+            .append("INSERT INTO Article ( \n")
             .append("    subject, \n")
             .append("    content \n")
             .append(") \n")
